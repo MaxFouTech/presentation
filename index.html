@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maximilien Fourmy — GenAI Engineer & Architect</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a2e;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+
+    /* Infographic */
+    .infographic {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .infographic img {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Section heading */
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #6b7280;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Project cards */
+    .projects {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .card {
+      display: block;
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+      border: 1px solid #e5e7eb;
+      transition: transform 0.15s, box-shadow 0.15s;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.2em 0.6em;
+      border-radius: 4px;
+      white-space: nowrap;
+    }
+
+    .badge-enterprise {
+      background: #0f766e;
+      color: #fff;
+    }
+
+    .badge-oss {
+      background: #e0e7ff;
+      color: #3730a3;
+    }
+
+    .card-desc {
+      font-size: 0.95rem;
+      color: #4b5563;
+    }
+
+    .card-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+      border: 1px solid #e5e7eb;
+    }
+
+    .card-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #6b7280;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #e5e7eb;
+      font-size: 0.85rem;
+      color: #9ca3af;
+    }
+
+    footer a {
+      color: #6b7280;
+      text-decoration: none;
+    }
+
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <section class="infographic">
+      <img src="Maximilien%20Fourmy%20overview.jpg" alt="Maximilien Fourmy — GenAI Engineer & Architect overview infographic">
+    </section>
+
+    <h2>Enterprise</h2>
+    <div class="projects" style="margin-bottom: 2rem;">
+      <a class="card" href="https://www.sap.com/products/artificial-intelligence/partners/syntax-systems-usa-lp-syntax-ai-codegenie.html" target="_blank" rel="noopener">
+        <div class="card-header">
+          <span class="card-title">CodeGenie</span>
+          <span class="badge badge-enterprise">SAP Store</span>
+        </div>
+        <p class="card-desc">AI agent that automatically documents custom SAP implementations (ABAP, SAPUI5) and makes this knowledge available through chat — built with RAG and Microsoft Teams integration.</p>
+        <span class="card-link">sap.com &rarr;</span>
+      </a>
+    </div>
+
+    <h2>Personal Projects</h2>
+    <div class="projects">
+      <a class="card" href="https://github.com/MaxFouTech/ccsecret" target="_blank" rel="noopener">
+        <img class="card-img" src="https://raw.githubusercontent.com/MaxFouTech/ccsecret/main/ccsecret-infographic.jpg" alt="ccsecret infographic">
+        <div class="card-header">
+          <span class="card-title">ccsecret</span>
+          <span class="badge badge-oss">Open Source</span>
+        </div>
+        <p class="card-desc">Transparent proxy that obfuscates secrets before they reach the Anthropic API. Drop-in protection for Claude Code — one command, zero config.</p>
+        <span class="card-link">github.com/MaxFouTech/ccsecret &rarr;</span>
+      </a>
+
+      <a class="card" href="https://github.com/MaxFouTech/human-captcha" target="_blank" rel="noopener">
+        <img class="card-img" src="https://raw.githubusercontent.com/MaxFouTech/human-captcha/main/demo.gif" alt="human-captcha demo">
+        <div class="card-header">
+          <span class="card-title">human-captcha</span>
+          <span class="badge badge-oss">Open Source</span>
+        </div>
+        <p class="card-desc">Experimental CAPTCHA exploiting persistence of vision. Each frame is random noise — humans perceive the hidden text through motion, but vision models cannot.</p>
+        <span class="card-link">github.com/MaxFouTech/human-captcha &rarr;</span>
+      </a>
+
+      <a class="card" href="https://github.com/MaxFouTech/compare-models-gpt-4-claude-3" target="_blank" rel="noopener">
+        <img class="card-img" src="https://raw.githubusercontent.com/MaxFouTech/compare-models-gpt-4-claude-3/main/charts_images/model_scores.png" alt="Model comparison scores chart">
+        <div class="card-header">
+          <span class="card-title">compare-models</span>
+          <span class="badge badge-oss">Open Source</span>
+        </div>
+        <p class="card-desc">Blind cross-evaluation of GPT-4 Turbo vs Claude 3 Opus (March 2024) — each model scores the other's answers without knowing their origin. Built before "LLM-as-a-judge" became a standard evaluation pattern.</p>
+        <span class="card-link">github.com/MaxFouTech/compare-models-gpt-4-claude-3 &rarr;</span>
+      </a>
+
+      <a class="card" href="https://github.com/MaxFouTech/clawdino" target="_blank" rel="noopener">
+        <img class="card-img" src="https://raw.githubusercontent.com/MaxFouTech/clawdino/master/readme_image.png" alt="Clawdino game screenshot">
+        <div class="card-header">
+          <span class="card-title">clawdino</span>
+          <span class="badge badge-oss">Open Source</span>
+        </div>
+        <p class="card-desc">A Claude Code-themed mod of the T-Rex Run 3D game — play as Clawdino dodging git pushes and overloaded errors in a terminal-inspired world.</p>
+        <span class="card-link">github.com/MaxFouTech/clawdino &rarr;</span>
+      </a>
+    </div>
+
+    <footer>
+      <a href="https://github.com/MaxFouTech">GitHub</a>
+    </footer>
+  </div>
+</body>
+</html>
